@@ -559,7 +559,7 @@ namespace Kapture
                     case ItemPayload itemPayload:
                         if (lootMessage.ItemId != 0) break;
                         lootMessage.ItemId = itemPayload.Item.RowId;
-                        lootMessage.ItemName = itemPayload.DisplayName.ToString();
+
                         if (itemPayload.Item.TryGetValue(out EventItem resolvedEventItem))
                         {
                             break;
@@ -568,6 +568,8 @@ namespace Kapture
                         {
                             lootMessage.Item = resolvedItem;
                         }
+
+                        lootMessage.ItemName = lootMessage.Item.Name.ToDalamudString().TextValue;
                         lootMessage.IsHq = itemPayload.IsHQ;
                         break;
                     case PlayerPayload playerPayload:
