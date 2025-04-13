@@ -1,7 +1,7 @@
 {
   "version": 1,
   "dependencies": {
-    "net8.0-windows7.0": {
+    "net9.0-windows7.0": {
       "coverlet.collector": {
         "type": "Direct",
         "requested": "[6.0.2, )",
@@ -35,33 +35,15 @@
         "resolved": "2.8.1",
         "contentHash": "qBTK0WAcnw65mymIjVDqWUTdqjMyzjwu9e9SF0oGYfYELgbcteDZ4fQLJaXw8mzkvpAD7YdoexBbg8VYQFkWWA=="
       },
-      "Dalamud.Loc": {
-        "type": "Transitive",
-        "resolved": "1.2.1",
-        "contentHash": "zOSjsstzBtgyCyjYbvGHoW+VH4APoivJZiWLaCKGecBqCySC3r2TcYhWt1s7xZLxA39SrsScNagFkPnnv4c8aw=="
-      },
       "DalamudPackager": {
         "type": "Transitive",
-        "resolved": "11.0.0",
-        "contentHash": "bjT7XUlhIJSmsE/O76b7weUX+evvGQctbQB8aKXt94o+oPWxHpCepxAGMs7Thow3AzCyqWs7cOpp9/2wcgRRQA=="
+        "resolved": "12.0.0",
+        "contentHash": "J5TJLV3f16T/E2H2P17ClWjtfEBPpq3yxvqW46eN36JCm6wR+EaoaYkqG9Rm5sHqs3/nK/vKjWWyvEs/jhKoXw=="
       },
       "Microsoft.CodeCoverage": {
         "type": "Transitive",
         "resolved": "17.10.0",
         "contentHash": "yC7oSlnR54XO5kOuHlVOKtxomNNN1BWXX8lK1G2jaPXT9sUok7kCOoA4Pgs0qyFaCtMrNsprztYMeoEGqCm4uA=="
-      },
-      "Microsoft.Extensions.DependencyInjection": {
-        "type": "Transitive",
-        "resolved": "7.0.0",
-        "contentHash": "elNeOmkeX3eDVG6pYVeV82p29hr+UKDaBhrZyWvWLw/EVZSYEkZlQdkp0V39k/Xehs2Qa0mvoCvkVj3eQxNQ1Q==",
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
-        }
-      },
-      "Microsoft.Extensions.DependencyInjection.Abstractions": {
-        "type": "Transitive",
-        "resolved": "7.0.0",
-        "contentHash": "h3j/QfmFN4S0w4C2A6X7arXij/M/OVw3uQHSOFxnND4DyAzO1F9eMX7Eti7lU/OkSthEE0WzRsfT/Dmx86jzCw=="
       },
       "Microsoft.TestPlatform.ObjectModel": {
         "type": "Transitive",
@@ -130,17 +112,10 @@
           "xunit.extensibility.core": "[2.8.1]"
         }
       },
-      "drunkentoad": {
-        "type": "Project",
-        "dependencies": {
-          "Dalamud.Loc": "[1.2.1, )",
-          "Microsoft.Extensions.DependencyInjection": "[7.0.0, )"
-        }
-      },
       "kapture": {
         "type": "Project",
         "dependencies": {
-          "DalamudPackager": "[11.0.0, )"
+          "DalamudPackager": "[12.0.0, )"
         }
       }
     }
