@@ -1,6 +1,6 @@
-<Project Sdk="Dalamud.NET.Sdk/12.0.2">
+<Project Sdk="Dalamud.NET.Sdk/13.0.0">
 	<PropertyGroup>
-		<Version>2.0.0.1</Version>
+		<Version>2.0.0.2</Version>
 		<Title>Kapture</Title>
 		<Authors>kalilistic, maintained by Khayle</Authors>
 		<Deterministic>true</Deterministic>
