@@ -1,6 +1,7 @@
 name: Release
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - master
@@ -29,4 +30,5 @@ jobs:
           dos2unix .github/script.sh
           chmod +x ".github/script.sh"
           ".github/script.sh" ${{ secrets.PAT }}
+
         shell: bash
