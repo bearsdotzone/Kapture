@@ -2,9 +2,6 @@ name: Release
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - master
 
 env:
   PUBLIC_NAME: Kapture
@@ -18,7 +15,6 @@ env:
 jobs:
   release:
     runs-on: ubuntu-latest
-    if: contains(github.event.head_commit.message, '[STABLE]') || contains(github.event.head_commit.message, '[TEST]')
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -32,3 +28,4 @@ jobs:
           ".github/script.sh" ${{ secrets.PAT }}
 
         shell: bash
+
